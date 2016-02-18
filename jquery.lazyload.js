@@ -114,6 +114,8 @@
                             }
                             $self[settings.effect](settings.effect_speed);
 
+                            [settings.callback][0]( $self );
+
                             self.loaded = true;
 
                             /* Remove image from array so it is not looped next time. */
